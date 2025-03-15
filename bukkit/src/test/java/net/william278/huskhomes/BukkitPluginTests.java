@@ -207,7 +207,7 @@ public class BukkitPluginTests {
         @DisplayName("Test Validator Rejects Invalid Names")
         @ParameterizedTest(name = "Invalid Name: \"{0}\"")
         @ValueSource(strings = {
-                "Invalid Name", "•♣♠", "Invali♣Name", "Invalid.Name", "", " ", "\0", "InvalidName12345678901234567890"
+                "Invalid Name", "•♣♠", "Invali♣Name", "Invalid.Name", "", " ", "\0"
         })
         public void testInvalidNameIsInvalid(@NotNull String name) {
             Assertions.assertThrows(

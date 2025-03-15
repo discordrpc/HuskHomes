@@ -26,7 +26,6 @@ import org.jetbrains.annotations.NotNull;
 
 public interface TextValidator {
 
-    int MAX_NAME_LENGTH = 16;
     int MAX_DESCRIPTION_LENGTH = 256;
 
     // Validate home and warp names
@@ -60,7 +59,7 @@ public interface TextValidator {
 
     // Check a home/warp name is of a valid length
     private boolean isValidNameLength(@NotNull String name) {
-        return name.length() <= MAX_NAME_LENGTH && !name.isEmpty();
+        return !name.isEmpty();
     }
 
     // Check a home/warp description contains only valid characters

@@ -118,10 +118,6 @@ public class EssentialsXImporter extends Importer {
                 name = "imported-" + UUID.randomUUID().toString().substring(0, 5);
             }
 
-            // Ensure name is not too long
-            if (name.length() > 16) {
-                name = name.substring(0, 16);
-            }
             return name;
         }
     }
